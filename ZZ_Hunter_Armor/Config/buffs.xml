@@ -1,0 +1,122 @@
+<config>
+<append xpath="/buffs">
+
+	<buff name="buffHunterSetBonus" name_key="buffHunterSetBonusName" description_key="buffHunterSetBonusDesc" tooltip_key="buffHunterSetBonusTooltip" icon="ui_game_symbol_armor_iron" icon_color="255,255,255">
+		<stack_type value="ignore"/>
+		<display_value_key value="Bonus"/>
+		<display_value value="xxx"/>
+
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupHunter" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".02"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorHunterFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".05">
+					<requirement name="HoldingItemHasTags" tags="rifleSkill"/>
+				</passive_effect>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupHunter" operation="Equals" value="2"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".04"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorHunterFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1">
+					<requirement name="HoldingItemHasTags" tags="rifleSkill"/>
+				</passive_effect>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupHunter" operation="Equals" value="3"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="6"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="6"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".06"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="15"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorHunterFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15">
+					<requirement name="HoldingItemHasTags" tags="rifleSkill"/>
+				</passive_effect>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupHunter" operation="Equals" value="4"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="8"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="8"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".08"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorHunterFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".2">
+					<requirement name="HoldingItemHasTags" tags="rifleSkill"/>
+				</passive_effect>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupHunter" operation="Equals" value="5"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>
+				<passive_effect name="LootStage" operation="perc_add" value=".1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="25"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorHunterFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25">
+					<requirement name="HoldingItemHasTags" tags="rifleSkill"/>
+				</passive_effect>
+		</effect_group>
+		
+		<effect_group>
+			<requirements>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupHunter" operation="Equals" value="6"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorScavengerFSBDisplay" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorScavengerFSBDisplay"/>				<passive_effect name="LootStage" operation="perc_add" value=".2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".armorHunterFSBDisplay" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorHunterFSBDisplay"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".5">
+					<requirement name="HoldingItemHasTags" tags="rifleSkill"/>
+				</passive_effect>
+		</effect_group>
+	</buff>
+</append>
+
+<append xpath="/buffs/buff[@name='buffStatusCheck02']">
+		<!-- *** HUNTER_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHunterSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupHunter" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffHunterSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHunterSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupHunter" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffHunterSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+</append>
+
+</config>

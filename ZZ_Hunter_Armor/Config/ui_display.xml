@@ -1,0 +1,21 @@
+<config>
+<append xpath="/ui_display_info/item_display">
+
+		<item_display_info display_type="armorHunterHelmet" display_group="groupAttire" extends="armorMediumNew" >
+			<display_entry name="dStaminaMax" title_key="statMaxStaminaBonus" display_leading_plus="true"/>
+		</item_display_info>
+
+		<item_display_info display_type="armorHunterOutfit" display_group="groupAttire" extends="armorMediumNew" >
+			<display_entry name="dHealthMax" title_key="statMaxHealthBonus" display_leading_plus="true"/>
+		</item_display_info>
+
+		<item_display_info display_type="armorHunterGloves" display_group="groupAttire" extends="armorMediumNew" >
+			<display_entry name="dRangerDamage" title_key="statHunterDamage" display_type="Percent" display_leading_plus="true"/>
+		</item_display_info>
+
+		<item_display_info display_type="armorHunterBoots" display_group="groupAttire" extends="armorMediumNew" >
+			<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
+		</item_display_info>
+
+</append>
+</config>

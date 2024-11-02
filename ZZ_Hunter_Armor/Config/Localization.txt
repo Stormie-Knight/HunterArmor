@@ -1,0 +1,13 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+buffHunterSetBonusDesc,buffs,Buff,,,"The Hunters skills are due to years of hunting and surviving in the apocalypse.\n\nReload {cvar(.armorHunterFSBDisplay:0)}% faster with Handguns and Rifles.\nFind {cvar(.armorScavengerFSBDisplay:0)}% better quality loot."
+buffHunterSetBonusName,buffs,Buff,,,Hunter Full Set Bonus
+buffHunterSetBonusTooltip,buffs,Buff,,,Hunter Full Set Bonus Active
+armorHunterHelmet,items,Clothes,,,Hunter Helmet
+armorHunterHelmetDesc,items,Clothes,,,Medium Armor\nRun farther and stay in the fight longer. Increases max stamina.\n\nFull Set Bonus: Reload faster with Handguns and Rifles.
+armorHunterGloves,items,Clothes,,,Hunter Gloves
+armorHunterGlovesDesc,items,Clothes,,,Medium Armor\nKill varmints with enhanced grip and precision. Increases rifle and revolver damage. \n\nFull Set Bonus: Reload faster with Handguns and Rifles.
+armorHunterOutfit,items,Clothes,,,Hunter Outfit
+armorHunterOutfitDesc,items,Clothes,,,Medium Armor\nA rugged leather duster that keeps you in the fight longer. Increases max health.\n\nFull Set Bonus: Reload faster with Handguns and Rifles.
+armorHunterBoots,items,Clothes,,,Hunter Boots
+armorHunterBootsDesc,items,Clothes,,,Medium Armor\nAn old pair of comfortable boots already broken in to help run faster. Increases run speed.\n\nFull Set Bonus: Reload faster with Handguns and Rifles.
+statHunterDamage,ui_display,Item stat,,,Handgun / Rifle Damage

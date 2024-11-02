@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="ZZ_Hunter_Armor" />
+	<DisplayName value="Hunter Armor" />
+	<Version value="1.0" />
+	<Description value="Armor test mod." />
+	<Author value="Stormie_Knight" />
+	<Website value="" />
+	<SkipWithAntiCheat value="true" />
+</xml>

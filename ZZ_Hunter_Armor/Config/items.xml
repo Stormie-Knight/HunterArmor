@@ -1,0 +1,188 @@
+<configs>
+<append xpath="/items">
+		<!-- *** HUNTER_HELMET -->
+<item name="armorHunterHelmet">
+	<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+	<property name="CustomIcon" value="armorRangerHelmet"/>
+	<property name="CustomIconTint" value="210,0,210"/>
+	<property name="DescriptionKey" value="armorHunterHelmetDesc"/>
+	<property name="DisplayType" value="armorHunterHelmet"/>
+	<property name="ArmorGroup" value="groupHunter"/>
+	<property name="Tags" value="head,armor,armorHead,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorHunterBonus"/>
+	<property name="EquipSlot" value="Head"/>
+	<property name="SoundPickup" value="headwear_cloth_grab"/>
+	<property name="SoundPlace" value="headwear_cloth_place"/>
+	<effect_group name="HunterHelmet">
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="16,20.3" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="16,20.3" tier="1,6" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="350,850" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+		
+		<passive_effect name="Mobility" operation="perc_add" value="-.049"/> <!-- Set .001 lower to resolve floating point rounding issues -->
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.56"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".08"/>
+		<display_value name="dNoiseMultiplier" value=".08"/>
+	</effect_group>
+
+	<effect_group>
+		<passive_effect name="StaminaMax" operation="base_add" value="10,20,30,40,50,60" tier="1,2,3,4,5,6"/>
+		<display_value name="dStaminaMax" value="10,20,30,40,50,60" tier="1,2,3,4,5,6"/>
+	</effect_group>
+
+	<property class="SDCS">
+		<property name="HeadGearName" value="Ranger"/>
+		<property name="TransformName" value="head"/>
+		<property name="Excludes" value=""/>
+		<property name="HairMaskType" value="Hat"/>
+	</property>
+</item>
+
+		<!-- *** HUNTER_OUTFIT -->
+<item name="armorHunterOutfit"> 
+	<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+	<property name="CustomIcon" value="armorRangerOutfit"/>
+	<property name="CustomIconTint" value="210,0,210"/>
+	<property name="DescriptionKey" value="armorHunterOutfitDesc"/>
+	<property name="DisplayType" value="armorHunterOutfit"/>
+	<property name="ArmorGroup" value="groupHunter"/>
+	<property name="Tags" value="upperbody,chest,armor,armorChest,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorHunterBonus"/>
+	<property name="EquipSlot" value="Chest"/>
+	<property name="SoundPickup" value="outfit_leather_grab"/>
+	<property name="SoundPlace" value="outfit_leather_place"/>
+	<effect_group name="HunterOutfit">
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="16,20.3" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="16,20.3" tier="1,6" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="350,850" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+		
+		<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.56"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".08"/>
+		<display_value name="dNoiseMultiplier" value=".08"/>
+	</effect_group>
+
+	<effect_group>
+		<passive_effect name="HealthMax" operation="base_add" value="10,20,30,40,50,60" tier="1,2,3,4,5,6"/>
+		<display_value name="dHealthMax" value="10,20,30,40,50,60" tier="1,2,3,4,5,6"/>
+	</effect_group>
+
+	<property class="SDCS">
+		<property name="Prefab" value="Entities/Player/*/Gear/Prefabs/gear*RangerPrefab"/>
+		<property name="TransformName" value="body"/>
+		<property name="Excludes" value="body"/>
+	</property>
+</item>
+
+		<!-- *** HUNTER_GLOVES -->
+<item name="armorHunterGloves">
+	<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+	<property name="CustomIcon" value="armorRangerGloves"/>
+	<property name="CustomIconTint" value="210,0,210"/>
+	<property name="DescriptionKey" value="armorHunterGlovesDesc"/>
+	<property name="DisplayType" value="armorHunterGloves"/>
+	<property name="ArmorGroup" value="groupHunter"/>
+	<property name="Tags" value="upperbody,hands,armor,armorHands,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorHunterBonus"/>
+	<property name="EquipSlot" value="Hands"/>
+	<property name="SoundPickup" value="gloves_leather_grab"/>
+	<property name="SoundPlace" value="gloves_leather_place"/>
+	<effect_group name="HunterGloves">
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="16,20.3" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="16,20.3" tier="1,6" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="350,850" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+		
+		<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.56"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".08"/>
+		<display_value name="dNoiseMultiplier" value=".08"/>
+		
+		<display_value name="dRangerDamage" value=".05,.1,.15,.2,.25,.5" tier="1,2,3,4,5,6"/>
+	</effect_group>
+
+	<effect_group>
+		<requirement name="HoldingItemHasTags" tags="rifleSkill,handgunSkill"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value=".05,.1,.15,.2,.25,.5" tier="1,2,3,4,5,6"/>
+	</effect_group>
+
+	<property class="SDCS">
+		<property name="Prefab" value="Entities/Player/*/Gear/Prefabs/gear*RangerPrefab"/>
+		<property name="TransformName" value="hands"/>
+		<property name="Excludes" value="hands"/>
+	</property>
+</item>
+
+		<!-- *** HUNTER_BOOTS -->
+<item name="armorHunterBoots">
+	<property name="Extends" value="armorMediumMaster" param1="CustomIcon"/>
+	<property name="CustomIcon" value="armorRangerBoots"/>
+	<property name="CustomIconTint" value="210,0,210"/>
+	<property name="DescriptionKey" value="armorHunterBootsDesc"/>
+	<property name="DisplayType" value="armorHunterBoots"/>
+	<property name="ArmorGroup" value="groupHunter"/>
+	<property name="Tags" value="lowerbody,feet,armor,armorFeet,mediumArmor,mediumArmorPenalty,canHaveCosmetic,mediumArmorDeg,armorMediumSkill,armorHunterBonus"/>
+	<property name="EquipSlot" value="Feet"/>
+	<property name="SoundPickup" value="footwear_leather_grab"/>
+	<property name="SoundPlace" value="footwear_leather_place"/>
+	<effect_group name="RangerBoots">
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="16,20.3" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.2,.2"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="16,20.3" tier="1,6" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="-.2,.2"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="0.043,0.053" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="350,850" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="mediumArmorDeg"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="20"/>
+		
+		<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
+		<display_value name="dStaminaChangeOT" value="-.56"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value=".08"/>
+		<display_value name="dNoiseMultiplier" value=".08"/>
+	</effect_group>
+
+	<effect_group>
+		<passive_effect name="RunSpeed" operation="perc_add" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+		<display_value name="dRunSpeed" value=".02,.04,.06,.08,.1,.2" tier="1,2,3,4,5,6"/>
+	</effect_group>
+
+	<property class="SDCS">
+		<property name="Prefab" value="Entities/Player/*/Gear/Prefabs/gear*RangerPrefab"/>
+		<property name="TransformName" value="feet"/>
+		<property name="Excludes" value="feet"/>
+	</property>
+</item>
+
+
+</append>
+</configs>
